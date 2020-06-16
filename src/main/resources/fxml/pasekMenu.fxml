@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="800.0" styleClass="stackpane" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kuba.controllers.DashboardController">
+    <children>
+        <ToolBar nodeOrientation="LEFT_TO_RIGHT" pickOnBounds="false" prefHeight="90.0" prefWidth="800.0">
+            <Button fx:id="mainWindow" alignment="CENTER" graphicTextGap="10.0" mnemonicParsing="false" onAction="#mainWindow" prefHeight="80.0" prefWidth="126.0" styleClass="hover_border" stylesheets="@stylesheet.css" text="Strona główna" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Button>
+            <Button fx:id="news" alignment="CENTER" graphicTextGap="10.0" mnemonicParsing="false" onAction="#news" prefHeight="80.0" prefWidth="129.0" styleClass="hover_border" stylesheets="@stylesheet.css" text="Nowości" textAlignment="CENTER" textFill="WHITE">
+                <font>
+                    <Font name="Avenir Book" size="18.0" />
+                </font>
+            </Button>
+            <Button fx:id="brands" alignment="CENTER" graphicTextGap="10.0" mnemonicParsing="false" onAction="#brands" prefHeight="80.0" prefWidth="128.0" styleClass="hover_border" stylesheets="@stylesheet.css" text="Producenci" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                <font>
+                    <Font name="Avenir Book" size="18.0" />
+                </font>
+            </Button>
+            <Button fx:id="categories" alignment="CENTER" graphicTextGap="10.0" mnemonicParsing="false" onAction="#categories" prefHeight="80.0" prefWidth="128.0" styleClass="hover_border" stylesheets="@stylesheet.css" text="Obuwie" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                <font>
+                    <Font name="Avenir Book" size="18.0" />
+                </font>
+            </Button>
+            <Button fx:id="zestawieniazamowien" alignment="CENTER" contentDisplay="TOP" graphicTextGap="10.0" mnemonicParsing="false" onAction="#zestawieniazamowien" prefHeight="80.0" prefWidth="128.0" styleClass="hover_border" stylesheets="@stylesheet.css" text="Weka" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                <font>
+                    <Font name="Avenir Book" size="18.0" />
+                </font>
+            </Button>
+            <Button alignment="CENTER" layoutX="10.0" layoutY="410.0" mnemonicParsing="false" onAction="#quit" prefHeight="80.0" prefWidth="120.0" styleClass="hover_border" stylesheets="@stylesheet.css" text="Wyjdź" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                <font>
+                    <Font name="Avenir Book" size="18.0" />
+                </font>
+            </Button>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+        </ToolBar>
+    </children>
+</StackPane>

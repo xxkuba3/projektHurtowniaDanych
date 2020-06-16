@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="cellAnchor" prefHeight="165.0" prefWidth="706.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+      <Label fx:id="producent" layoutX="190.0" layoutY="19.0" prefHeight="27.0" prefWidth="262.0" text="Producent">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+        <Label fx:id="cellNazwa" layoutX="480.0" layoutY="9.0" prefHeight="48.0" prefWidth="245.0" text="Nazwa" AnchorPane.leftAnchor="480.0" AnchorPane.rightAnchor="-19.0" AnchorPane.topAnchor="9.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="cellCena" layoutX="190.0" layoutY="72.0" prefHeight="48.0" prefWidth="232.0" text="Cena" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="284.0" AnchorPane.topAnchor="72.0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+        <ImageView fx:id="cellImageView" fitHeight="172.0" fitWidth="173.0" layoutX="-1.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true" />
+        <Label disable="true" layoutX="204.0" layoutY="133.0" prefHeight="17.0" prefWidth="97.0" text="Dodaj do koszyka" visible="false" AnchorPane.leftAnchor="204.0" AnchorPane.topAnchor="133.0" />
+        <Button fx:id="zamowobuwie" layoutX="193.0" layoutY="129.0" prefHeight="26.0" prefWidth="155.0" styleClass="cell-button" stylesheets="@stylesheet.css" text="Zamów obuwie" textFill="WHITE" />
+      <Label fx:id="rozmiar" layoutX="480.0" layoutY="68.0" prefHeight="30.0" prefWidth="256.0" text="Rozmiar">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="dostepnailosc" layoutX="480.0" layoutY="124.0" prefHeight="27.0" prefWidth="256.0" text="Dostępna ilość">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

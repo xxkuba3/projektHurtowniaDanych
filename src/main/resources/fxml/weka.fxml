@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kuba.controllers.WEKAController">
+    <children>
+        <VBox prefHeight="600.0" prefWidth="650.0">
+            <children>
+                <StackPane prefHeight="84.0" prefWidth="650.0">
+                    <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ilosc reguł:">
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                </Text>
+                                <Separator opacity="0.0" orientation="VERTICAL" prefHeight="82.0" prefWidth="10.0" />
+                        <TextField fx:id="minRules" prefHeight="27.0" prefWidth="80.0" style="-fx-cursor: text;" />
+                                <Separator opacity="0.0" orientation="VERTICAL" prefHeight="82.0" prefWidth="10.0" />
+                        <Text layoutX="229.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="minMetric:" />
+                        <Separator layoutX="262.0" layoutY="10.0" opacity="0.0" orientation="VERTICAL" prefHeight="82.0" prefWidth="10.0" />
+                        <TextField fx:id="minSupp" layoutX="272.0" layoutY="38.0" prefHeight="27.0" prefWidth="80.0" style="-fx-cursor: text;" />
+                        <Separator layoutX="433.0" layoutY="10.0" opacity="0.0" orientation="VERTICAL" prefHeight="82.0" prefWidth="10.0" />
+                        <Text layoutX="305.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="minSupport:" />
+                        <Separator layoutX="360.0" layoutY="10.0" opacity="0.0" orientation="VERTICAL" prefHeight="82.0" prefWidth="10.0" />
+                        <TextField fx:id="minMetric" layoutX="370.0" layoutY="38.0" prefHeight="27.0" prefWidth="80.0" style="-fx-cursor: text;" />
+                        <Separator layoutX="438.0" layoutY="10.0" opacity="0.0" orientation="VERTICAL" prefHeight="82.0" prefWidth="30.0" />
+                                <Button mnemonicParsing="false" onAction="#pokaz" prefHeight="27.0" prefWidth="70.0" style="-fx-cursor: hand;" text="Pokaż" />
+                            </children>
+                        </HBox>
+                    </children>
+                </StackPane>
+                <HBox prefHeight="520.0" prefWidth="650.0">
+               <children>
+                  <TextArea fx:id="associationData" prefHeight="518.0" prefWidth="658.0" />
+               </children></HBox>
+            </children>
+        </VBox>
+    </children>
+</HBox>

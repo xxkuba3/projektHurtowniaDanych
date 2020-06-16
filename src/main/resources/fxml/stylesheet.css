@@ -1,0 +1,29 @@
+.parent{
+	-fx-background-color: #fff;
+}
+.sidebar{
+	-fx-background-color: #333645;
+}
+.btns:hover{
+	-fx-background-color: #202332;
+}
+.box{
+	-fx-border-color: #7C8184;
+	-fx-border-width: 10px 0px 0px 0px;
+}
+.button{
+    -fx-background-color: #333645;
+}
+.stackpane{
+    -fx-background-color: #333645;
+}
+.dash_header{
+    -fx-background-color: #2196f3;
+}
+.hover_border:hover {
+    -fx-background-color: #686f8f;
+    -fx-cursor: hand;
+}
+.cursor_hand{
+    -fx-cursor: hand;
+}

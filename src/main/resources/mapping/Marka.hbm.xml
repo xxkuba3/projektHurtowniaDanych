@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="mapping.Marka" table="marka" schema="public" catalog="sklepp">
+        <id name="idMarki">
+            <column name="id_marki" sql-type="integer"/>
+        </id>
+        <property name="nazwa">
+            <column name="nazwa" sql-type="varchar(20)" length="20"/>
+        </property>
+        <set name="obuwiesByIdMarki" inverse="true">
+            <key>
+                <column name="id_marki"/>
+            </key>
+            <one-to-many not-found="ignore" class="mapping.Obuwie"/>
+        </set>
+    </class>
+</hibernate-mapping>

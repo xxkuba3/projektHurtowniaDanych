@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL10Dialect</property>
+        <property name="connection.url">jdbc:postgresql://localhost:5432/sklepp</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">admin</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <mapping class="mapping.Kategoria"/>
+        <mapping class="mapping.Klienci"/>
+        <mapping class="mapping.Marka"/>
+        <mapping class="mapping.Polecane"/>
+        <mapping class="mapping.Obuwie"/>
+        <mapping class="mapping.Rozmiar"/>
+        <mapping class="mapping.Zamowienie"/>
+        <mapping resource="mapping/Zamowienie.hbm.xml"/>
+        <mapping resource="mapping/Kategoria.hbm.xml"/>
+        <mapping resource="mapping/Klienci.hbm.xml"/>
+        <mapping resource="mapping/Marka.hbm.xml"/>
+        <mapping resource="mapping/Polecane.hbm.xml"/>
+        <mapping resource="mapping/Obuwie.hbm.xml"/>
+        <mapping resource="mapping/Rozmiar.hbm.xml"/>
+        <mapping resource="mapping/Kategoria.hbm.xml"/>
+        <mapping resource="mapping/Klienci.hbm.xml"/>
+        <mapping resource="mapping/Marka.hbm.xml"/>
+        <mapping resource="mapping/Polecane.hbm.xml"/>
+        <mapping resource="mapping/Obuwie.hbm.xml"/>
+        <mapping resource="mapping/Rozmiar.hbm.xml"/>
+        <mapping resource="mapping/Zamowienie.hbm.xml"/>
+        <mapping resource="mapping/Kategoria.hbm.xml"/>
+        <mapping resource="mapping/Klienci.hbm.xml"/>
+        <mapping resource="mapping/Marka.hbm.xml"/>
+        <mapping resource="mapping/Polecane.hbm.xml"/>
+        <mapping resource="mapping/Obuwie.hbm.xml"/>
+        <mapping resource="mapping/Rozmiar.hbm.xml"/>
+        <mapping resource="mapping/Zamowienie.hbm.xml"/>
+        <mapping resource="mapping/Kategoria.hbm.xml"/>
+        <mapping resource="mapping/Klienci.hbm.xml"/>
+        <mapping resource="mapping/Marka.hbm.xml"/>
+        <mapping resource="mapping/Polecane.hbm.xml"/>
+        <mapping resource="mapping/Obuwie.hbm.xml"/>
+        <mapping resource="mapping/Rozmiar.hbm.xml"/>
+        <mapping resource="mapping/Zamowienie.hbm.xml"/>
+        <mapping resource="mapping/Kategoria.hbm.xml"/>
+        <mapping resource="mapping/Klienci.hbm.xml"/>
+        <mapping resource="mapping/Marka.hbm.xml"/>
+        <mapping resource="mapping/Obuwie.hbm.xml"/>
+        <mapping class="mapping.Polecane"/>
+        <mapping resource="mapping/Polecane.hbm.xml"/>
+        <mapping resource="mapping/Rozmiar.hbm.xml"/>
+        <mapping resource="mapping/Zamowienie.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>

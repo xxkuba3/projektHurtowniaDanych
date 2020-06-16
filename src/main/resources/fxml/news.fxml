@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="mainWindowBorderPane" depthTest="ENABLE" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kuba.controllers.NewsController">
+    <center>
+        <Pane prefHeight="600.0" prefWidth="108.0" BorderPane.alignment="CENTER" />
+    </center>
+   <top>
+        <VBox alignment="TOP_CENTER" prefHeight="625.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+            <fx:include fx:id="dashboard" source="pasekMenu.fxml" />
+            <AnchorPane layoutX="228.0" layoutY="117.0" prefHeight="268.0" prefWidth="800.0" AnchorPane.bottomAnchor="53.0" AnchorPane.leftAnchor="228.0" AnchorPane.rightAnchor="227.0" AnchorPane.topAnchor="117.0">
+                <children>
+               <ListView fx:id="list" prefHeight="512.0" prefWidth="800.0" />
+                    <TextField fx:id="nothingFound" alignment="CENTER" disable="true" editable="false" focusTraversable="false" layoutX="163.0" layoutY="201.0" prefHeight="109.0" prefWidth="500.0" text="Nie znaleźliśmy tego czego szukasz :(" AnchorPane.bottomAnchor="201.39999999999998" AnchorPane.leftAnchor="163.0" AnchorPane.rightAnchor="162.0">
+                        <font>
+                            <Font size="22.0" />
+                        </font>
+                    </TextField>
+                </children>
+            </AnchorPane>
+        </VBox>
+   </top>
+</BorderPane>

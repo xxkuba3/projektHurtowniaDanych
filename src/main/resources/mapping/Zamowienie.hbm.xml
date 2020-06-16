@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="mapping.Zamowienie" table="zamowienie" schema="public" catalog="sklepp">
+        <id name="idZamowienia">
+            <column name="id_zamowienia" sql-type="integer"/>
+            <generator class="identity"/>
+        </id>
+        <property name="dataRealizacji">
+            <column name="data_realizacji" sql-type="date"/>
+        </property>
+        <many-to-one name="klienciByIdKlienta" class="mapping.Klienci">
+            <column name="id_klienta"/>
+        </many-to-one>
+        <many-to-one name="obuwieByIdObuwia" class="mapping.Obuwie">
+            <column name="id_obuwia"/>
+        </many-to-one>
+    </class>
+</hibernate-mapping>
